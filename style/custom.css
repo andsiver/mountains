@@ -14,6 +14,15 @@ font-family: 'Raleway', sans-serif;
         url('../fonts/Bringin/Bringin.otf') format('otf');
 }
 
+header {
+    background: url('/img/bg/header-bg.png') no-repeat;
+    background-position: center top; 
+}
 
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 
