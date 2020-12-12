@@ -14,12 +14,12 @@ font-family: 'Raleway', sans-serif;
         url('../fonts/Bringin/Bringin.otf') format('otf');
 }
 
-/* Temporarily added 'height' to see the full block' */
+/* -- Menu part -- */
+
 header {
     background: url('/img/bg/header-bg.png') no-repeat;
     background-position: center top; 
     overflow: hidden;
-    height: 698px;
 }
 
 .container-wrap {
@@ -82,6 +82,69 @@ header button:hover {
 }
 
 header button:active {
+    background-color: #3a95c2;
+    box-shadow: inset 0 0 10px;
+}
+
+/* -- Inside-box-on-image part -- */
+
+.inside-box {
+    overflow: hidden;
+    width: 520px;
+    margin: 170px 0 195px 40px;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header h1 span {
+    font-family: 'Bringin', sans-serif;
+    font-size: 66px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #56c7ff;
+}
+
+header h3 {
+    margin: 25px 60px 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #dee2e4;
+}
+
+header .order-button {
+    float: left;
+    margin-top: 25px;
+    padding: 17px 75px;
+    background-color: #36aeea;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+header .order-button:hover {
+    background-color: transparent;
+    color: #36aeea;
+    text-shadow: rgb(0, 0, 0) 0 0 20px;
+    border: 3px solid #36aeea;
+    transition: 0.5s;
+}
+
+header .order-button:active {
     background-color: #3a95c2;
     box-shadow: inset 0 0 10px;
 }
