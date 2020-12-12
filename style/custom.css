@@ -14,15 +14,76 @@ font-family: 'Raleway', sans-serif;
         url('../fonts/Bringin/Bringin.otf') format('otf');
 }
 
+/* Temporarily added 'height' to see the full block' */
 header {
     background: url('/img/bg/header-bg.png') no-repeat;
     background-position: center top; 
+    overflow: hidden;
+    height: 698px;
+}
+
+.container-wrap {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .container {
     max-width: 1140px;
+    overflow: hidden;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+header a img {
+    float: left;
+    padding: 25px 40px 25px 10px;
+}
+
+header ul li {
+    float: left;
+    margin: 35px 0px 0px 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+header ul li:hover {
+    border-bottom: 2px solid #36aeea;
+}
+
+header ul li a, a:visited {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #9daeb6;
+}
+
+header button {
+    float: right;
+    margin-top: 20px;
+    padding: 13px 45px;
+    background-color: transparent;
+    border: 3px solid #36aeea;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #36aeea;
+}
+
+header button:hover {
+    background-color: #36aeea;
+    color: white;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+
+header button:active {
+    background-color: #3a95c2;
+    box-shadow: inset 0 0 10px;
 }
 
 
