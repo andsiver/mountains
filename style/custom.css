@@ -15,25 +15,88 @@ font-family: 'Roboto', sans-serif;
         url('../fonts/Bringin/Bringin.otf') format('otf');
 }
 
-/* -- Menu part -- */
+/* -- Text styles -- */
 
-header {
-    background: url('/img/bg/header-bg.png') no-repeat;
-    background-position: center top; 
-    overflow: hidden;
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c2e37;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.container-wrap {
-    width: 100%;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.3);
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #dee2e4;
 }
+
+/* -- Button style -- */
+
+button {
+    float: left;
+    background-color: #36aeea;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #36aeea;
+    border: 3px solid #36aeea;
+    transition: 0.5s;
+}
+
+button:active {
+    background-color: #36aeea;
+    box-shadow: inset 0 0 10px;
+}
+
+/* -- Wrappers -- */
 
 .container {
     max-width: 1140px;
     overflow: hidden;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+/* -- Menu part -- */
+
+header {
+    background: url('../img/bg/header-bg.png') no-repeat;
+    background-position: center top; 
+    overflow: hidden;
+}
+
+.half-transparent {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.container a {
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+
+header nav {
+    float: left;
+    overflow: hidden;
+}
+
+header nav ul {
+    float: left;
+    overflow: hidden;
 }
 
 header a img {
@@ -49,7 +112,7 @@ header ul li {
 }
 
 header ul li:hover {
-    border-bottom: 2px solid #36aeea;
+    border-bottom: 3px solid #36aeea;
 }
 
 header ul li a, a:visited {
@@ -61,30 +124,22 @@ header ul li a, a:visited {
     color: #9daeb6;
 }
 
-header button {
+.header-button {
     float: right;
     margin-top: 20px;
     padding: 13px 45px;
     background-color: transparent;
     border: 3px solid #36aeea;
-    border-radius: 5px;
-    font-family: 'Raleway', sans-serif;
     font-size: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #36aeea;
 }
 
-header button:hover {
+.header-button:hover {
     background-color: #36aeea;
     color: white;
     border: 3px solid transparent;
-    transition: 0.5s;
-}
-
-header button:active {
-    background-color: #3a95c2;
-    box-shadow: inset 0 0 10px;
 }
 
 /* -- Inside-box-on-image part -- */
@@ -115,50 +170,44 @@ header h1 span {
 }
 
 header h3 {
-    margin: 25px 60px 0 0;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #dee2e4;
+    margin: 25px 60px 0 0;
 }
 
-header .order-button {
-    float: left;
+.order-button {
     margin-top: 25px;
     padding: 17px 75px;
-    background-color: #36aeea;
-    border: 3px solid transparent;
-    border-radius: 5px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-header .order-button:hover {
-    background-color: transparent;
-    color: #36aeea;
-    text-shadow: rgb(0, 0, 0) 0 0 20px;
-    border: 3px solid #36aeea;
-    transition: 0.5s;
-}
-
-header .order-button:active {
-    background-color: #3a95c2;
-    box-shadow: inset 0 0 10px;
 }
 
 /* Section 1 */
 
-main section:nth-child(1) {
-    background: #f6f4f4;
+section:nth-child(1) {
+    background-color: #f6f4f4;
+    background-image: url('../img/section-one/world.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
-main section:nth-child(1) .container {
-    background: url('/img/section-one/world.png') center no-repeat;
-    opacity: 0.3;
-    padding-top: 20px;
-    padding-bottom: 600px;
+.about-text {
+    float: left;
+    width: 360px;
+    margin-top: 195px;
+}
+
+.about-text img {
+    margin-bottom: 40px;
+}
+
+section:nth-child(1) h3 {
+    color: #949494;
+    margin: 20px 0 35px 0;
+    line-height: 25px;
+}
+
+.read-button {
+    padding: 12px 23px;
+    font-size: 12px;
 }
