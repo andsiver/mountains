@@ -37,7 +37,6 @@ h3 {
 /* -- Typical button style -- */
 
 button {
-    float: left;
     background-color: #36aeea;
     border: 3px solid transparent;
     border-radius: 5px;
@@ -60,7 +59,7 @@ button:active {
     box-shadow: inset 0 0 10px;
 }
 
-/* -- General wrapper -- */
+/* -- General sections wrapper -- */
 
 .container {
     max-width: 1140px;
@@ -70,46 +69,51 @@ button:active {
 
 /* Header */
 
+/* Header // Part 1: logo + nav + btn */
+
 header {
-    background: url('../img/bg/header-bg.png') center top no-repeat;
+    background: url('../img/header/header-bg.png') center top no-repeat;
 }
 
-/* Header: navigation part */
-
-.half-transparent {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.3);
-}
-
-header .container:first-of-type {
-    overflow: hidden;
-}
-
-.container a {
+header:before {
+    background: rgba(255, 255, 255, 0.3) center top;
+    content: ' ';
     display: block;
-    float: left;
-    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+}
+
+header .container:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-logo {
+    width: 17%;
+    min-width: 150px;
+}
+
+.header-logo img {
+    padding-left: 15px;
 }
 
 header nav {
-    float: left;
-    overflow: hidden;
+    width: 69%;
+    min-width: 570px;
+
 }
 
 header nav ul {
-    float: left;
-    overflow: hidden;
-}
-
-header a img {
-    float: left;
-    padding: 25px 40px 25px 10px;
+    display: flex;
+    padding: 25px 0;
 }
 
 header ul li {
-    float: left;
-    margin: 35px 0px 0px 25px;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    margin-right: 30px;
     border-bottom: 3px solid transparent;
 }
 
@@ -126,12 +130,13 @@ header ul li a, a:visited {
     color: #9daeb6;
 }
 
-/* Header: button part */
-
 .header-button {
-    float: right;
-    margin-top: 20px;
-    padding: 13px 45px;
+    width: 14%;
+    min-width: 160px;
+}
+
+.header-button button {
+    padding: 13px 40px;
     background-color: transparent;
     border: 3px solid #36aeea;
     font-size: 12px;
@@ -140,18 +145,20 @@ header ul li a, a:visited {
     color: #36aeea;
 }
 
-.header-button:hover {
+.header-button button:hover {
     background-color: #36aeea;
     color: white;
     border: 3px solid transparent;
 }
 
-/* Header: inside-box-on-image part */
+/* Header // Part 2: elements inside the white-border box */
 
 .inside-box {
-    overflow: hidden;
-    width: 520px;
-    padding: 170px 0 195px 40px;
+    width: 45%;
+    min-width: 335px;
+    padding: 170px 0 193px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 header h1 {
@@ -178,28 +185,27 @@ header h3 {
     margin: 25px 60px 0 0;
 }
 
-.order-button {
+.order-button button {
     margin-top: 25px;
     padding: 17px 75px;
 }
 
 /* Section #1 */
 
-/* Section #1: bg and container part */
+/* Section #1: Part 1: bg and container */
 
-section:nth-child(1) {
+.section-one {
     background-color: #f6f4f4;
 }
 
-
-section:nth-child(1) h3 {
+.section-one h3 {
     color: #949494;
     margin: 20px 0 35px 0;
     line-height: 25px;
     letter-spacing: 0.3px;
 }
 
-section:nth-child(1) .container {
+.section-one .container {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -208,7 +214,7 @@ section:nth-child(1) .container {
     background-repeat: no-repeat;
 }
 
-/* Section #1: text-and-button part */
+/* Section #1: Part 2: text-and-button */
 
 .about-us_text:before {
     display: block;
@@ -228,7 +234,7 @@ section:nth-child(1) .container {
     font-size: 12px;
 }
 
-/* Section #1: images part */
+/* Section #1: Part 3: images */
 
 .about-us_imgs {
     width: 60%;
