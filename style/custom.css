@@ -64,7 +64,6 @@ button:active {
 
 .container {
     max-width: 1140px;
-    overflow: hidden;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -74,13 +73,15 @@ button:active {
 header {
     background: url('../img/bg/header-bg.png') no-repeat;
     background-position: center top; 
-    overflow: hidden;
 }
 
 .half-transparent {
     width: 100%;
-    overflow: hidden;
     background: rgba(255, 255, 255, 0.3);
+}
+
+header .container:first-of-type {
+    overflow: hidden;
 }
 
 .container a {
@@ -147,7 +148,7 @@ header ul li a, a:visited {
 .inside-box {
     overflow: hidden;
     width: 520px;
-    margin: 170px 0 195px 40px;
+    padding: 170px 0 195px 40px;
 }
 
 header h1 {
@@ -184,30 +185,58 @@ header h3 {
 section:nth-child(1) {
     background-color: #f6f4f4;
     background-image: url('../img/section-one/world.png');
-    background-position: top center;
+    background-position: center -3px;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: start;
 }
 
-.about-text {
-    float: left;
-    width: 360px;
-    margin-top: 195px;
-}
-
-.about-text img {
-    margin-bottom: 40px;
-}
 
 section:nth-child(1) h3 {
     color: #949494;
     margin: 20px 0 35px 0;
     line-height: 25px;
+    letter-spacing: -0.6px;
 }
 
-.read-button {
+section:nth-child(1) .container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.about-us_text:before {
+    display: block;
+    content: " ";
+    width: 100px;
+    height: 45px;
+    background: url('../img/icons/waves.png') no-repeat;
+}
+
+.about-us_text {
+    width: 40%;
+    padding: 195px 125px 225px 0;
+}
+
+.about-us_text .read-more_button {
     padding: 12px 23px;
     font-size: 12px;
+}
+
+.about-us_imgs {
+    width: 60%;
+    position: relative;
+    z-index: 0 auto;
+}
+
+.about-us_large-img {
+    position: relative;
+    z-index: 5;
+    left: 10px;
+    top: -35px;
+}
+
+.about-us_small-img {
+    position: absolute;
+    z-index: 10;
+    left: -65px;
+    bottom: -50px;    
 }
