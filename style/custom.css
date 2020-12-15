@@ -71,8 +71,7 @@ button:active {
 /* Header */
 
 header {
-    background: url('../img/bg/header-bg.png') no-repeat;
-    background-position: center top; 
+    background: url('../img/bg/header-bg.png') center top no-repeat;
 }
 
 /* Header: navigation part */
@@ -111,7 +110,7 @@ header ul li {
     float: left;
     margin: 35px 0px 0px 25px;
     padding-bottom: 10px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
 }
 
 header ul li:hover {
@@ -221,7 +220,7 @@ section:nth-child(1) .container {
 
 .about-us_text {
     width: 40%;
-    padding: 210px 100px 215px 0;
+    padding: 210px 100px 220px 0;
 }
 
 .about-us_text .read-more_button {
@@ -248,7 +247,7 @@ section:nth-child(1) .container {
     position: absolute;
     z-index: 10;
     left: 0px;
-    bottom: -50px;    
+    top: 275px;
 }
 
 /* Section #2 */
