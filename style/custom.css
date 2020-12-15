@@ -1,6 +1,7 @@
 /* Google Fonts to use:
 font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; 
+font-family: 'Roboto', sans-serif;
 */
 
 @font-face {
@@ -14,57 +15,110 @@ font-family: 'Raleway', sans-serif;
         url('../fonts/Bringin/Bringin.otf') format('otf');
 }
 
-/* -- Menu part -- */
+/* -- Text styles -- */
 
-header {
-    background: url('../img/bg/header-bg.png') no-repeat;
-    background-position: center top; 
-    overflow: hidden;
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c2e37;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.container-wrap {
-    width: 100%;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.3);
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #dee2e4;
 }
+
+/* -- Typical button style -- */
+
+button {
+    background-color: #36aeea;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #36aeea;
+    border: 3px solid #36aeea;
+    transition: 0.5s;
+}
+
+button:active {
+    background-color: #36aeea;
+    box-shadow: inset 0 0 10px;
+}
+
+/* -- General sections wrapper -- */
 
 .container {
     max-width: 1140px;
-    overflow: hidden;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-.container a {
+/* Header */
+
+/* Header // Part 1: logo + nav + btn */
+
+header {
+    background: url('../img/header/header-bg.png') center top no-repeat;
+}
+
+header:before {
+    background: rgba(255, 255, 255, 0.3) center top;
+    content: ' ';
     display: block;
-    float: left;
-    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+}
+
+header .container:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-logo {
+    width: 17%;
+    min-width: 150px;
+}
+
+.header-logo img {
+    padding-left: 15px;
 }
 
 header nav {
-    float: left;
-    overflow: hidden;
+    width: 69%;
+    min-width: 570px;
+
 }
 
 header nav ul {
-    float: left;
-    overflow: hidden;
-}
-
-header a img {
-    float: left;
-    padding: 25px 40px 25px 10px;
+    display: flex;
+    padding: 25px 0;
 }
 
 header ul li {
-    float: left;
-    margin: 35px 0px 0px 25px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    margin-right: 30px;
+    border-bottom: 3px solid transparent;
 }
 
 header ul li:hover {
-    border-bottom: 2px solid #36aeea;
+    border-bottom: 3px solid #36aeea;
 }
 
 header ul li a, a:visited {
@@ -76,38 +130,35 @@ header ul li a, a:visited {
     color: #9daeb6;
 }
 
-header button {
-    float: right;
-    margin-top: 20px;
-    padding: 13px 45px;
+.header-button {
+    width: 14%;
+    min-width: 160px;
+}
+
+.header-button button {
+    padding: 13px 40px;
     background-color: transparent;
     border: 3px solid #36aeea;
-    border-radius: 5px;
-    font-family: 'Raleway', sans-serif;
     font-size: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #36aeea;
 }
 
-header button:hover {
+.header-button button:hover {
     background-color: #36aeea;
     color: white;
     border: 3px solid transparent;
-    transition: 0.5s;
 }
 
-header button:active {
-    background-color: #3a95c2;
-    box-shadow: inset 0 0 10px;
-}
-
-/* -- Inside-box-on-image part -- */
+/* Header // Part 2: elements inside the white-border box */
 
 .inside-box {
-    overflow: hidden;
-    width: 520px;
-    margin: 170px 0 195px 40px;
+    width: 45%;
+    min-width: 335px;
+    padding: 170px 0 193px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 header h1 {
@@ -130,38 +181,79 @@ header h1 span {
 }
 
 header h3 {
-    margin: 25px 60px 0 0;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #dee2e4;
+    margin: 25px 60px 0 0;
 }
 
-header .order-button {
-    float: left;
+.order-button button {
     margin-top: 25px;
     padding: 17px 75px;
-    background-color: #36aeea;
-    border: 3px solid transparent;
-    border-radius: 5px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ffffff;
 }
 
-header .order-button:hover {
-    background-color: transparent;
-    color: #36aeea;
-    border: 3px solid #36aeea;
-    transition: 0.5s;
+/* Section #1 */
+
+/* Section #1: Part 1: bg and container */
+
+.section-one {
+    background-color: #f6f4f4;
 }
 
-header .order-button:active {
-    background-color: #3a95c2;
-    box-shadow: inset 0 0 10px;
+.section-one h3 {
+    color: #949494;
+    margin: 20px 0 35px 0;
+    line-height: 25px;
+    letter-spacing: 0.3px;
 }
 
+.section-one .container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-image: url('../img/section-one/world.png');
+    background-position: 110px 25px;
+    background-repeat: no-repeat;
+}
 
+/* Section #1: Part 2: text-and-button */
+
+.about-us_text:before {
+    display: block;
+    content: " ";
+    width: 100px;
+    height: 45px;
+    background: url('../img/icons/waves.png') no-repeat;
+}
+
+.about-us_text {
+    width: 40%;
+    padding: 210px 100px 220px 0;
+}
+
+.about-us_text .read-more_button {
+    padding: 12px 23px;
+    font-size: 12px;
+}
+
+/* Section #1: Part 3: images */
+
+.about-us_imgs {
+    width: 60%;
+    position: relative;
+    z-index: auto;
+}
+
+.about-us_large-img {
+    position: relative;
+    z-index: 5;
+    left: 90px;
+    top: -35px;
+}
+
+.about-us_small-img {
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 275px;
+}
+
+/* Section #2 */

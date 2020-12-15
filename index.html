@@ -10,6 +10,11 @@
     <meta name="robots" content=" ">
     <meta name="author" content=" ">
 
+        <!--  Essential icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+
         <!--  Essential tags for social media sharing -->
     <meta property="og:title" content=" ">
     <meta property="og:description" content=" ">
@@ -33,12 +38,16 @@
 
 <body>
     <header>
-      <div class="container-wrap">
+        <!-- Header // Part 1: logo + nav + btn -->
         <div class="container">
+<<<<<<< HEAD
             <a href="#"><img class="header-logo" src="./img/mountains-logo.png" alt="Mountings"></a>
+=======
+            <div class="header-logo"><a href="#"><img src="./img/mountains-logo.png" alt="Mountings"></a></div>
+>>>>>>> flex
             <nav>
                 <ul>
-                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Our&nbsp;story</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Journal</a></li>
@@ -47,16 +56,44 @@
                     <li><a href="#">Journal</a></li>
                 </ul>
             </nav>
-            <button class="header-button" onclick="alert('Our number is: +380 (96) 56-56-565')">Call us</button>
+            <div class="header-button">
+                <button onclick="alert('Our number is: +380 (96) 56-56-565')">Call&nbsp;us</button>
+            </div>
         </div>
-      </div> 
+        <!-- Header // Part 2: elements inside the white-border box -->
         <div class="container">
             <div class="inside-box">
+<<<<<<< HEAD
                 <h1>Travel with us <span>to the Mountains</span></h1>
+=======
+                <h1><div>Travel with&nbsp;us</div><span>to&nbsp;the Mountains</span></h1>
+>>>>>>> flex
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</h3>
-                <button class="order-button" onclick="alert('Order by this number: +380 (96) 56-56-565')">Order now</button>
+                <div class="order-button">
+                    <button onclick="alert('Order by this number: +380 (96) 56-56-565')">Order&nbsp;now</button>
+                </div>
             </div>
         </div>    
     </header>
+
+    <main>
+        <!-- Section #1 -->
+        <section class="section-one">
+            <div class="container">
+                <div class="about-us_text">
+                    <h2>About us</h2>
+                    <h3>Aliquam sed posuere urna, et gravida nisl. Praesent 
+                        interdum nisl libero, pretium egestas purus eleifend 
+                        vitae. Mauris suscipit vel lectus at luctus.
+                    </h3>
+                    <button class="read-more_button" onclick="alert('Now you are reading more')">Read more</button>
+                </div>
+                <div class="about-us_imgs">
+                    <img class="about-us_large-img" src="./img/section-one/about-large.png" alt=" ">
+                    <img class="about-us_small-img" src="./img/section-one/about-small.png" alt=" ">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
