@@ -72,7 +72,7 @@ button:active {
 /* Header // Part 1: logo + nav + btn */
 
 header {
-    background: url('../img/header/no-borders-bg.png') center top no-repeat;
+    background: #f6f4f4 url('../img/header/no-borders-bg.png') center top no-repeat;
     position: relative;
     z-index: auto;
 }
@@ -173,8 +173,8 @@ header .container:nth-of-type(2) {
 .box {
     width: 99%;
     min-width: 775px;
-    margin-bottom: 145px;
-    border: 4px rgb(255, 255, 255);
+    margin-bottom: 12%;
+    border: 3px rgb(255, 255, 255);
     border-style: none solid solid solid;
     position: relative;
     z-index: 15;
@@ -183,7 +183,7 @@ header .container:nth-of-type(2) {
 .line-under-man {
     margin-top: 140px;
     width: 99%;
-    border: 4px rgb(255, 255, 255);
+    border: 3px rgb(255, 255, 255);
     border-style: solid solid none solid;
     min-width: 775px;
     position: relative;
