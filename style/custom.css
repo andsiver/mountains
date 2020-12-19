@@ -72,7 +72,7 @@ button:active {
 /* Header // Part 1: logo + nav + btn */
 
 header {
-    background: #f6f4f4 url('../img/header/no-borders-bg.png') center top no-repeat;
+    background: #f6f4f4 url('../img/header/no-borders-bg.jpg') center top no-repeat;
     position: relative;
     z-index: auto;
 }
