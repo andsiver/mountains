@@ -16,7 +16,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background: #f6f4f4 url('../img/header/no-borders-bg.jpg') center top no-repeat;
+    background: url('../img/header/no-borders-bg.jpg') center top no-repeat;
     position: relative;
     z-index: auto;
     margin: 0 auto;
@@ -144,7 +144,8 @@ header ul li a, a:visited {
 }
 
 .header-button button {
-    padding: 13px 40px;
+    min-width: 155px;
+    min-height: 45px;
     background-color: transparent;
     border: 3px solid #36aeea;
     font-size: 12px;
@@ -196,7 +197,7 @@ header ul li a, a:visited {
 .inside-box {
     width: 45%;
     min-width: 335px;
-    padding: 40px 0px 35px 40px;
+    padding: 35px 0px 35px 35px;
     display: flex;
     flex-direction: column;
 }
@@ -227,7 +228,8 @@ header ul li a, a:visited {
 
 .order-button button {
     margin-top: 25px;
-    padding: 17px 75px;
+    min-width: 260px;
+    min-height: 60px;
 }
 
 /* Section #2 // Part 1: bg and container */
@@ -257,9 +259,9 @@ header ul li a, a:visited {
 .about-us_text:before {
     display: block;
     content: " ";
-    width: 100px;
+    width: 100%;
     height: 45px;
-    background: url('../img/icons/waves.png') no-repeat;
+    background: url('../img/icons/waves.png') left top no-repeat;
 }
 
 .about-us_text {
@@ -268,7 +270,8 @@ header ul li a, a:visited {
 }
 
 .about-us_text .read-more_button {
-    padding: 12px 23px;
+    min-width: 135px;
+    min-height: 44px;
     font-size: 12px;
 }
 
@@ -295,3 +298,74 @@ header ul li a, a:visited {
 }
 
 /* Section #3 */
+
+.section-3 .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.journal_header {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 70px 0;
+}
+.journal_header h2 {
+    font-size: 30px;
+}
+
+.journal_header:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 35px;
+    background: url('../img/icons/waves.png') center top no-repeat;
+}
+
+.journal_tiles {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    margin-bottom: 90px;
+}
+
+.journal_tiles_item {
+    width: 33.33%;
+    min-height: 378px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journal_tiles_item_img-1 {
+    background: url('../img/section-3/journey_img-1.jpg') no-repeat;
+    background-size: cover;
+}
+
+.journal_tiles_item_img-2 {
+    background: url('../img/section-3/journey_img-2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.journal_tiles_item_img-3 {
+    background: url('../img/section-3/journey_img-3.jpg') no-repeat;
+    background-size: cover;
+}
+
+.journal_tiles_item_text {
+    padding: 50px 21px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.journal_tiles_item_text h2 span {
+    text-decoration: line-through;
+}
+
+.journal_tiles_item_text h2 {
+    font-size: 16.15px;
+    letter-spacing: 3px;
+}
