@@ -312,7 +312,7 @@ header ul li a, a:visited {
     top: 275px;
 }
 
-/* Section #3 */
+/* Section #3: Our journal */
 
 .section-3 .container {
     display: flex;
@@ -323,7 +323,7 @@ header ul li a, a:visited {
 .journal_subject {
     width: 100%;
     text-align: center;
-    margin: 50px 0 70px 0;
+    margin: 70px 0 70px 0;
 }
 .journal_subject h2 {
     font-size: 30px;
