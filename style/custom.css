@@ -305,16 +305,16 @@ header ul li a, a:visited {
     flex-wrap: wrap;
 }
 
-.journal_header {
+.journal_subject {
     width: 100%;
     text-align: center;
     margin: 50px 0 70px 0;
 }
-.journal_header h2 {
+.journal_subject h2 {
     font-size: 30px;
 }
 
-.journal_header:before {
+.journal_subject:before {
     display: block;
     content: " ";
     width: 100%;
@@ -323,7 +323,7 @@ header ul li a, a:visited {
 }
 
 .journal_tiles {
-    width: 100%;
+    width: 1134px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -333,11 +333,12 @@ header ul li a, a:visited {
 }
 
 .journal_tiles_item {
-    width: 33.33%;
+    width: 378px;
     min-height: 378px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .journal_tiles_item_img-1 {
@@ -355,6 +356,39 @@ header ul li a, a:visited {
     background-size: cover;
 }
 
+.journal_tiles_arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+
+  .journal_tiles_arrow-up {
+    width: 0; 
+    height: 0; 
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+  }
+
+  .journal_tiles_arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
 .journal_tiles_item_text {
     padding: 50px 21px;
     line-height: 27px;
@@ -368,4 +402,10 @@ header ul li a, a:visited {
 .journal_tiles_item_text h2 {
     font-size: 16.15px;
     letter-spacing: 3px;
+}
+
+@media all and (max-width: 1134px) {
+    .journal_tiles {
+        width: 756px;
+    }
 }
