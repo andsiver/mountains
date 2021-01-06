@@ -92,6 +92,9 @@ button:active {
 /* Header // Part 1: logo + nav + btn */
 
 header {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
     position: relative;
     z-index: auto;
 }
@@ -105,7 +108,8 @@ header:before {
     z-index: 10;
 }
 
-header .container:nth-of-type(1) {
+header .container {
+    width: 1140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,36 +117,45 @@ header .container:nth-of-type(1) {
     z-index: 15;
 }
 
+.flex-left {
+    display: flex;
+    align-items: center;
+}
+.flex-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .header-logo {
-    width: 17%;
-    min-width: 150px;
+    min-width: 190px;
 }
 
 .header-logo img {
-    padding-left: 15px;
+    padding: 5px 0 0 10px;
 }
 
-header nav {
-    width: 69%;
+.header-nav {
     min-width: 570px;
 }
 
-header nav ul {
+.header-nav ul {
     display: flex;
     padding: 25px 0;
 }
 
-header ul li {
+.header-nav ul li a {
     padding: 10px 0;
-    margin-right: 30px;
+    margin-right: 25px;
     border-bottom: 3px solid transparent;
+    transition: 0.5s;
 }
 
-header ul li:hover {
+.header-nav ul li a:hover {
     border-bottom: 3px solid #36aeea;
 }
 
-header ul li a, a:visited {
+.header-nav ul li a, a:visited {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -152,8 +165,8 @@ header ul li a, a:visited {
 }
 
 .header-button {
-    width: 14%;
     min-width: 160px;
+    margin-right: 10px;
 }
 
 .header-button button {
