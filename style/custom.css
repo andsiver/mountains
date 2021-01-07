@@ -460,7 +460,6 @@ header .container {
 @media all and (max-width: 1200px) {
     .journal_tiles {
         width: 756px;
-        min-width: 756px;
     }
     .journal_tiles_item:nth-child(1) {
         order: 1;
@@ -490,6 +489,40 @@ header .container {
         top: 50px;
         left: 359px;
     } /* make it arrow-left */
+}
+
+@media all and (max-width: 820px) {
+    .journal_tiles {
+        width: 378px;
+    }
+    .journal_tiles_item:nth-child(1) {
+        order: 1;
+    }
+    .journal_tiles_item:nth-child(2) {
+        order: 2;
+    }
+    .journal_tiles_item:nth-child(3) {
+        order: 5;
+    }
+    .journal_tiles_item:nth-child(4) {
+        order: 4;
+    }
+    .journal_tiles_item:nth-child(5) {
+        order: 3;
+    }
+    .journal_tiles_item:nth-child(6) {
+        order: 65;
+    }
+    .journal_tiles_arrow-up, .journal_tiles_arrow-left, .journal_tiles_arrow-right {
+        width: 0; 
+        height: 0; 
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid rgb(255, 255, 255);
+        position: absolute;
+        left: 179px;
+        top: 358px;
+    } /* make it arrow-up at the bottom of imgs*/
 }
 
 
@@ -645,5 +678,17 @@ header .container {
 
     .header-logo {
         z-index: 45;
+    }
+
+    @media (max-width: 600px) {
+        .flex-left {
+            width: 47%;
+        }
+        .flex-right {
+            width: 53%;
+        }
+        .header-button button {
+            min-width: 110px;
+        }
     }
 }
