@@ -1,0 +1,26 @@
+/* Google Fonts to use:
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; 
+font-family: 'Roboto', sans-serif;
+*/
+
+@font-face {
+	font-family: 'Bringin';
+	src: url('../fonts/Bringin/Bringin.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/Bringin/Bringin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/Bringin/Bringin.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/Bringin/Bringin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/Bringin/Bringin.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/Bringin/Bringin.eot.svg#Bringin') format('svg'), /* Chrome < 4, Legacy iOS */
+        url('../fonts/Bringin/Bringin.otf') format('otf');
+}
+
+@font-face {
+	font-family: 'Times New Roman Italic';
+	src: url('../fonts/TimesNewRomanItalic/times_new_roman_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/TimesNewRomanItalic/times_new_roman_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/TimesNewRomanItalic/times_new_roman_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/TimesNewRomanItalic/times_new_roman_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/TimesNewRomanItalic/times_new_roman_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/TimesNewRomanItalic/times_new_roman_italic.svg#times_new_roman_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
