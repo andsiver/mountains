@@ -265,9 +265,10 @@ header .container {
 }
 
 .section-2 .container {
+    min-height: 670px;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     background-image: url('../img/section-2/world-bg.png');
     background-position: 110px 25px;
     background-repeat: no-repeat;
@@ -275,14 +276,10 @@ header .container {
 
 /* Section #2 // Part 2: text-and-button */
 
-.section-2 .container {
-    min-height: 670px;
-    align-items: center;
-}
-
 .about-us_text {
     width: 360px;
     margin-right: 100px;
+    transition: 1s;
 }
 
 .about-us_text:before {
@@ -515,6 +512,7 @@ header .container {
 
     .header-nav ul {
         width: 100%;
+        height: 100vh;
         margin-top: -45px;
         background: rgba(0, 0, 0, 0.7);
         -webkit-transition: all 1s cubic-bezier(.325, 1, .22, 1);
@@ -665,11 +663,15 @@ header .container {
     .about-us_large-img {
         width: 624px;
         height: 442px;
+        top: -145px;
+    }
+    .about-us_small-img {
+        top: 165px;
     }
 }
 @media all and (max-width: 1350px) {
     .about-us_imgs {
-        width: 300px;
+        width: 400px;
     }
     .about-us_text {
         width: 280px;
@@ -678,10 +680,47 @@ header .container {
     .about-us_large-img {
         width: 500px;
         height: 354px;
+        top: -190px;
         left: 0px;
     }
     .about-us_small-img {
+        top: 120px;
         left: 75px;
+    }
+}
+@media all and (max-width: 800px) {
+    .section-2 .container {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .about-us_imgs {
+        width: 100%;
+        z-index: 5;
+    }
+    .about-us_text {
+        width: 280px;
+        margin-right: 0px;
+        position: absolute;
+        top: 330px;
+        z-index: 10;
+    }
+    .about-us_text h2 {
+        color: #fff;
+    }
+    .about-us_text h3 {
+        color: #36aeea;
+        text-shadow: #d3d0cf 0px 0px 5px,  #d3d0cf 1px 1px 2px,  #d3d0cf -1px -1px 2px;
+    }
+    .about-us_large-img {
+        width: 500px;
+        height: 354px;
+        top: -180px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .about-us_small-img {
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
     
