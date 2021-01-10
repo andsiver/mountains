@@ -1149,26 +1149,44 @@ header .container {
 
     /* Section #5: How we work */
 
-    @media all and (max-width: 900px) {
-        .wework_item {
-            width: 50%;
-        }
-        .wework_item-3, .wework_item-4 {
-            margin-top: 50px;
-        }
-        .wework_items-wrap:before {
-            width: 65%;
-        }
-        .wework_items-wrap:after {
-            display: block;
-            content: " ";
-            width: 65%;
-            height: 2px;
-            background: url(../img/section-5/dash.png) center top repeat;
-            position: absolute;
-            top: 672px;
-            left: 12%;
-            z-index: 1;
-        }
+@media all and (max-width: 900px) {
+    .wework_item {
+        width: 50%;
     }
+    .wework_item-3, .wework_item-4 {
+        margin-top: 50px;
+    }
+    .wework_items-wrap:before {
+        left: 23%;
+        width: 54%;
+    }
+    .wework_items-wrap:after {
+        display: block;
+        content: " ";
+        width: 54%;
+        height: 2px;
+        background: url('../img/section-5/dash.png') center top repeat;
+        position: absolute;
+        top: 672px;
+        left: 23%;
+        z-index: 1;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .wework_item {
+        width: 100%;
+    }
+    .wework_item-2 {
+        margin-top: 50px;
+    }
+    .wework_items-wrap:before {
+        display: none;
+    } 
+    .wework_items-wrap:after {
+        display: none;
+    }
+}
+
+
 
