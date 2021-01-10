@@ -28,7 +28,7 @@ h3 {
 
 /* -- Typical button style -- */
 
-button {
+button, #submit {
     background-color: #36aeea;
     border: 3px solid transparent;
     border-radius: 5px;
@@ -40,14 +40,14 @@ button {
     transition: 1s;
 }
 
-button:hover {
+button:hover, #submit:hover {
     background-color: transparent;
     color: #36aeea;
     border: 3px solid #36aeea;
     transition: 0.5s;
 }
 
-button:active {
+button:active, #submit:active {
     color: white;
     background-color: #36aeea;
     box-shadow: rgb(54, 138, 234) 0 0 10px;
@@ -86,7 +86,7 @@ header {
 }
 
 header:before {
-    background: rgba(255, 255, 255, 0.3) center top;
+    background: rgba(255, 255, 255, 0.3);
     content: " ";
     position: absolute;
     width: 100%;
@@ -271,6 +271,15 @@ header .container {
     min-width: 260px;
     min-height: 60px;
 }
+
+
+
+
+
+
+
+
+
 
 /* Section #2 // Part 1: bg and container */
 
@@ -482,6 +491,109 @@ header .container {
     font-size: 14px;
     padding-top: 20px;
 }
+
+
+
+
+
+
+
+
+/* Section #4: Wanna go form */
+
+.section-4 {
+    background-color: #f6f4f4;
+    background: url('../img/section-4/form-bg.jpg') center bottom no-repeat;
+    background-size: cover;
+}
+
+.section-4 .container {
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_description {
+    width: 700px;
+    transition: 1s;
+}
+
+.form_description:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 45px;
+    background: url('../img/icons/waves.png') left top no-repeat;
+}
+
+.form_description h3 {
+    color: #949494;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.form_description h3 span {
+    display: block;
+}
+
+.form_form {
+    max-width: 850px;
+    min-height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.form_form form {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_form-element {
+    display: inline-block;
+    width: 33%;
+}
+
+#submit {
+    float: right;
+    font-size: 16px;
+    min-width: 225px;
+    min-height: 54px;
+    margin-right: 3px;
+}
+
+#name, #phone {
+    width: 93%;
+    min-height: 32px;
+    border: none;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #949494;
+}
+
+.form_form-element #name {
+    border-right: 2px solid #ebebeb;
+}
+
+.form_data-notion {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.form_data-notion p {
+    color: #36aeea;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
 
 
 
