@@ -784,14 +784,9 @@ header .container {
     background: url('../img/icons/waves.png') center top no-repeat;
 }
 
-.travel-us_items-wrap {
-    display: flex;
-}
-
 .travel-us_item, .travel-us_item:visited  {
-    display: block;
-    text-decoration: none;
-    width: 160px;
+    width: 70%;
+    min-width: 160px;
     min-height: 342px;
     border: 0;
     border-radius: 3px;
@@ -800,11 +795,14 @@ header .container {
     font-weight: 400;
     color: #ffffff;
     padding: 20px;
-    margin: 0 18px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    text-decoration: none;
+    position: relative;
+    z-index: auto;
     transition: 0.5s;
 }
 
@@ -817,6 +815,19 @@ header .container {
     color: #ffffff;
     background-size: 101%;
     transition: 0.1ms;
+}
+
+.travel-us_item:after {
+    content: " ";
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 63px;
+    border-radius: 0 0 3px 3px;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
 }
 
 .travel-us_item-stars {
@@ -845,6 +856,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .travel-us_item-price_old {
@@ -1501,7 +1513,7 @@ header .container {
         width: 50%;
     }
     .wework_item-3, .wework_item-4 {
-        margin: 50px 0;
+        margin: 100px 0;
     }
     .wework_items-wrap:before {
         left: 23%;
@@ -1531,7 +1543,7 @@ header .container {
         margin-bottom: 0px;
     }
     .wework_item-4 {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .wework_items-wrap:before, .wework_items-wrap:after {
         display: none;
