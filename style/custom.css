@@ -784,22 +784,104 @@ header .container {
     background: url('../img/icons/waves.png') center top no-repeat;
 }
 
-.travel-us_item {
-    width: 200px;
-    min-height: 382px;
+.travel-us_items-wrap {
+    display: flex;
+}
+
+.travel-us_item, .travel-us_item:visited  {
+    display: block;
+    text-decoration: none;
+    width: 160px;
+    min-height: 342px;
     border: 0;
     border-radius: 3px;
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     font-weight: 400;
     color: #ffffff;
+    padding: 20px;
+    margin: 0 18px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
+    transition: 0.5s;
+}
+
+.travel-us_item:hover {
+    color: #ccf3fd;
+    background-size: 103%;
+    transition: 0.5s;
+}
+.travel-us_item:active {
+    color: #ffffff;
+    background-size: 101%;
+    transition: 0.1ms;
+}
+
+.travel-us_item-stars {
+    display: flex;
+}
+
+.travel-us_item-stars i {
+    font-size: 19px;
+    color: inherit;
+    text-shadow: 0px 0px 1px #000;
+    margin-right: 4px;
+}
+
+.travel-us_item-name {
+    padding-top: 25px;
+}
+
+.travel-us_item-description {
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 20px;
+}
+
+.travel-us_item-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-us_item-price_old {
+    font-size: 18px;
+    text-decoration: line-through;
+    padding-top: 10px;
+}
+
+.travel-us_item-price_new {
+    font-size: 26px;
+    font-weight: 900;
+    padding-top: 5px;
 }
 
 .travel-us_item-1 {
     background: url('../img/section-6/item/travel-carpathian.jpg') center no-repeat;
+    background-size: 100%;
+}
+
+.travel-us_item-2 {
+    background: url('../img/section-6/item/travel-alps.jpg') center no-repeat;
+    background-size: 100%;
+}
+
+.travel-us_item-3 {
+    background: url('../img/section-6/item/travel-pyrenees.jpg') center no-repeat;
+    background-size: 100%;
+}
+
+.travel-us_item-4 {
+    background: url('../img/section-6/item/travel-rocky.jpg') center no-repeat;
+    background-size: 100%;
+}
+
+.travel-us_item-5 {
+    background: url('../img/section-6/item/travel-kavkaz.jpg') center no-repeat;
+    background-size: 100%;
 }
 
 
