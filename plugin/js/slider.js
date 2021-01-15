@@ -1,6 +1,7 @@
-$('.owl-carousel').owlCarousel({
+$('#dest-carousel').owlCarousel({
     loop:true,
     nav:false,
+    dots: false,
     center:true,
     autoplay:true,
     autoplayTimeout:3000,
@@ -32,4 +33,33 @@ $('.owl-carousel').owlCarousel({
             center:false
         }
     }
-})
+});
+
+$('#brands-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    dots: false,
+    margin:0,
+    autoplay:true,
+    autoplayTimeout:2000,
+    smartSpeed: 900,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+        },
+        500:{
+            items:3,
+        },
+        700:{
+            items:4,
+        },
+        900:{
+            items:5,
+        },
+        1100:{
+            items:6,
+            loop:false
+        }
+    }
+});
