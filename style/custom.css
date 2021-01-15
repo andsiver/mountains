@@ -932,6 +932,7 @@ header .container {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 30px;
 }
+
 /*
 .gallery_img {
     width: 100%;
@@ -963,6 +964,33 @@ header .container {
 .gallery_img-wrap-6 {
     grid-column: 8 / 13;
     grid-row: 6 / 13;
+}
+
+/* Section #8: Brands */
+
+.section-8 {
+    height: 180px;
+    background-color: #f8f9fa;
+}
+
+.section-8_container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands_figure {
+    display: flex;
+    justify-content: center;
+}
+
+.brands_figure-first {
+    justify-content: flex-start;
+}
+
+.brands_figure-last {
+    justify-content: flex-end;
 }
 
 
