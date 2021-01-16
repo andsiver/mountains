@@ -1198,15 +1198,15 @@ header .container {
     z-index: 1;
 }
 .footer_container {
-    height: inherit;
+    min-height: 90px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 .footer_container::before {
     content: " ";
     width: 100%;
-    height: inherit;
+    min-height: inherit;
     backdrop-filter: brightness(110%) blur(30px);
     position: absolute;
     bottom: 0;
@@ -2025,13 +2025,28 @@ header .container {
 
 
 
+    /* Section #9: Reviews */
+
+@media all and (max-width: 500px) {
+    .review_text, .review_credentials {
+        padding: 0 20px;
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
     /* Footer */
 
 @media all and (max-width: 650px) {
     .footer_container {
         display: flex;
         flex-direction: column-reverse;
-        min-height: 150px;
+        justify-content: center;
+        min-height: 200px;
     }
 }
 
