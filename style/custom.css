@@ -799,7 +799,7 @@ header .container {
 }
 
 .travel-us_item, .travel-us_item:visited  {
-    width: 70%;
+    width: 50%;
     min-width: 160px;
     min-height: 342px;
     border: 0;
@@ -1198,7 +1198,7 @@ header .container {
     z-index: 1;
 }
 .footer_container {
-    min-height: 90px;
+    min-height: 82px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1246,7 +1246,7 @@ header .container {
 
 .footer_socials {
     display: flex;
-    margin: 25px 0;
+    margin: 21px 0;
     z-index: 5;
 }
 
@@ -1551,11 +1551,6 @@ header .container {
     .section-1:after {
         background-position: -980px bottom;
     }
-}
-@media all and (max-width: 350px) {
-    .section-1:after {
-        background-position: -1030px bottom;
-    }
     .inside-box {
         padding: 35px 0px 35px 20px;
     }
@@ -1586,6 +1581,12 @@ header .container {
         top: 15px;
     }
 }
+@media all and (max-width: 300px) {
+    .section-1:after {
+        background-position: -1020px bottom;
+    }
+}
+
 
 
 
@@ -1702,8 +1703,8 @@ header .container {
         top: 260px;
     }
     .about-us_large-img {
-        width: 400px;
-        height: 283px;
+        width: 370px;
+        height: 262px;
         top: -200px;
     }
     .about-us_small-img {
@@ -1718,9 +1719,14 @@ header .container {
         top: 210px;
     }
     .about-us_large-img {
-        width: 360px;
-        height: 255px;
+        width: 320px;
+        height: 226px;
         top: -200px;
+    }
+    .about-us_small-img {
+        width: 280px;
+        height: 280px;
+        top: 0px;
     }
     .about-us_small-img {
         top: 10px;
