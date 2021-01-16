@@ -1,4 +1,4 @@
-$('#dest-carousel').owlCarousel({
+$('#destinations-carousel').owlCarousel({
     loop:true,
     nav:false,
     dots: false,
@@ -36,12 +36,13 @@ $('#dest-carousel').owlCarousel({
 });
 
 $('#brands-carousel').owlCarousel({
+    rtl: true,
     loop:true,
     nav:false,
     dots: false,
     margin:0,
     autoplay:true,
-    autoplayTimeout:2000,
+    autoplayTimeout:4000,
     smartSpeed: 900,
     responsiveClass:true,
     responsive:{
@@ -60,6 +61,25 @@ $('#brands-carousel').owlCarousel({
         1100:{
             items:6,
             loop:false
+        }
+    }
+});
+
+$('#reviews-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    dots: false,
+    margin:40,
+    autoplay:true,
+    autoplayTimeout:7000,
+    smartSpeed: 1400,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        1100:{
+            items:2,
         }
     }
 });
