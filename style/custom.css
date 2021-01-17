@@ -1011,11 +1011,9 @@ header .container {
 
 .brands_img {
     margin: 0 auto;
-}
-
-.owl-carousel .owl-item img {
     width: initial !important;
 }
+
 
 
 
@@ -1091,6 +1089,7 @@ header .container {
 
 .review_credentials-photo {
     border-radius: 50%;
+    width: initial !important;
 }
 
 .review_credentials-name {
@@ -1408,14 +1407,13 @@ header .container {
     }
 
     .line {
-        position: absolute;
-        z-index: 50;
-        display: block;
-        background: #9daeb6;
         width: 30px;
         height: 2px;
         border-radius: 2px;
+        background: #9daeb6;
+        position: absolute;
         left: 0;
+        z-index: 50;
         -webkit-transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
         -o-transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
         transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
@@ -1544,12 +1542,12 @@ header .container {
 }
 @media all and (max-width: 450px) {
     .section-1:after {
-        background-position: -940px bottom;
+        background-position: -930px bottom;
     }
 }
 @media all and (max-width: 400px) {
     .section-1:after {
-        background-position: -980px bottom;
+        background-position: -970px bottom;
     }
     .inside-box {
         padding: 35px 0px 35px 20px;
@@ -1741,11 +1739,13 @@ header .container {
     }
     .about-us_text {
         top: 143px;
-        padding-left: 20px;
+        padding-left: 50px;
     }
     .about-us_text h3 {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 220px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
     }
     .about-us_large-img {
         width: 300px;
