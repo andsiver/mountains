@@ -1711,10 +1711,20 @@ header .container {
 }
 @media all and (max-width: 380px) {
     .section-2 .container {
-        min-height: 580px;
+        min-height: 450px;
+    }
+    .about-us_text:before {
+        height: 35px;
     }
     .about-us_text {
-        top: 210px;
+        top: 140px;
+        padding-left: 50px;
+    }
+    .about-us_text h3 {
+        width: 220px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
     }
     .about-us_large-img {
         width: 320px;
@@ -1731,15 +1741,8 @@ header .container {
     }
 }
 @media all and (max-width: 350px) {
-    .section-2 .container {
-        min-height: 450px;
-    }
-    .about-us_text:before {
-        height: 35px;
-    }
     .about-us_text {
-        top: 143px;
-        padding-left: 50px;
+        top: 135px;
     }
     .about-us_text h3 {
         width: 220px;
